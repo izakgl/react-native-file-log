@@ -99,7 +99,7 @@ public class RNReactLoggingModule extends ReactContextBaseJavaModule {
                 @Override
                 public int compare(File a, File b) {
                     String fileName1 = a.getName().replaceAll("log|\\.txt", "");
-                    String fileName2 = a.getName().replaceAll("log|\\.txt", "");
+                    String fileName2 = b.getName().replaceAll("log|\\.txt", "");
                     try {
                         int file1 = Integer.parseInt(fileName1);
                         int file2 = Integer.parseInt(fileName2);
